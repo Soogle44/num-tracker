@@ -8,11 +8,11 @@ import util
 main_shoplist = ["ag_sapporo", "ag_ueno", "ag_shibuya",
                  "ori_shibuyahonten", "ori_shibuyaekimae", "ori_shinjuku", "ai_ueno", "ai_shinjuku", "ai_shibuya"]
 
-# engine = create_engine(
-#     "postgresql://pucutfjiyhpfna:ba94c95f2579f5114df12cc23f5d760881d9ce3b105cde7e90d50b55c67594cc@ec2-54-80-123-146.compute-1.amazonaws.com:5432/dd2ar3lir1105m")
+engine = create_engine(
+    "postgresql://pucutfjiyhpfna:ba94c95f2579f5114df12cc23f5d760881d9ce3b105cde7e90d50b55c67594cc@ec2-54-80-123-146.compute-1.amazonaws.com:5432/dd2ar3lir1105m")
 
-# df = pd.read_sql(sql="SELECT * FROM data3;", con=engine)
-# engine.dispose()
+df = pd.read_sql(sql="SELECT * FROM data3;", con=engine)
+engine.dispose()
 # df.to_csv("tmp.csv")
 
 
