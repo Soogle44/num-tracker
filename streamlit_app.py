@@ -25,8 +25,12 @@ if st.session_state.initial_load:
 
     st.session_state.html = util.make_main_number_html(util.make_main_df(main_shoplist, st.session_state.df))
 
+st.set_page_config(
+    page_title="Num tracker",
+    page_icon="👀",
+)
 
-st.title("num tracker")
+st.title("Num tracker")
 
 stc.html(st.session_state.html, height=205)
 
