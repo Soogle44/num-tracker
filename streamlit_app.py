@@ -12,10 +12,10 @@ engine = create_engine(st.secrets["DATABASE"])
 
 df = pd.read_sql(sql="SELECT * FROM data3;", con=engine)
 engine.dispose()
-df.to_csv("tmp2.csv")
+# df.to_csv("tmp2.csv")
 
 
-df = pd.read_csv("tmp.csv", index_col=0)
+# df = pd.read_csv("tmp.csv", index_col=0)
 
 df = util.change_date_type(df)
 
@@ -31,8 +31,6 @@ datetime_interval = util.make_datetime_interval(show_date)
 chart_column = util.make_chart_column(show_shop_list)
 
 show_df = df[chart_column]
-
-print(show_df)
 
 show_df = show_df[(show_df["date"] > datetime_interval[0]) & (show_df["date"] < datetime_interval[1])]
 
