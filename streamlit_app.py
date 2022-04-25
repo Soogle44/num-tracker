@@ -51,6 +51,7 @@ for col in chart_column:
 
 fig.update_layout(legend={"x": 0, "y": -0.2, "yanchor": "top"})
 fig.update_layout(margin={"l": 0, "r": 0, "t": 0, "b": 0})
+fig.update_layout(xaxis=dict(range=(datetime_interval[0], datetime_interval[1])))
 st.plotly_chart(fig, use_container_width=True)
 
 with st.expander("show data"):
