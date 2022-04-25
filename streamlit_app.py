@@ -32,6 +32,8 @@ chart_column = util.make_chart_column(show_shop_list)
 
 show_df = df[chart_column]
 
+print(show_df)
+
 show_df = show_df[(show_df["date"] > datetime_interval[0]) & (show_df["date"] < datetime_interval[1])]
 
 fig = go.Figure()
