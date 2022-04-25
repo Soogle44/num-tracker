@@ -55,9 +55,8 @@ def make_main_number_html(main_df):
     """
 
     nowtime = datetime.datetime.now().hour
-    print(nowtime)
     isOpen = True
-    if nowtime > 3 and nowtime < 18:
+    if nowtime > 18 or nowtime < 9:
         isOpen = False
 
     itemlist = []
