@@ -38,10 +38,10 @@ def make_main_number_html(main_df):
     margin: 2px;
     padding: 1px;
     border-style: none;
-    border-radius: 20px;
+    border-radius: 15px;
     border-width: 1px;
     font-family: Helvetica;
-    box-shadow: 0 3px 5px 0 rgba(0,0,0);
+    box-shadow: 0 2px 5px 0 #757575;
     font-size: 15px;
     }
 
